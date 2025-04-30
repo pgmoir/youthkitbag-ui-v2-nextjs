@@ -63,3 +63,40 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Next.js 14+ (App Router)
+
+With App Router, routing is folder-based under app/. Layouts and templates give structure; middleware handles auth redirection.
+
+```bash
+/app/
+│
+├── page.tsx               # Marketing landing page ("/")
+├── signin/
+│   └── page.tsx           # Sign-in ("/signin")
+├── signup/
+│   └── page.tsx           # Sign-up ("/signup")
+├── help/
+│   └── page.tsx           # Public help page ("/help")
+├── prices/
+│   └── page.tsx           # Public prices page
+│
+├── dashboard/
+│   ├── layout.tsx         # Optional: sidebar or layout for logged-in pages
+│   ├── page.tsx           # Default post-login home ("/dashboard")
+│   ├── profile/
+│   │   └── page.tsx       # Profile page
+│   └── settings/
+│       └── page.tsx       # Settings page
+│
+/components/
+├── Navbar.tsx
+├── Footer.tsx
+├── AuthForm.tsx
+│
+/lib/
+├── auth.ts                # Auth helpers (e.g., cookies, tokens)
+/middleware.ts             # Edge middleware for route protection
+```
+
+> You can protect /dashboard pages via middleware or server components using session checks.
