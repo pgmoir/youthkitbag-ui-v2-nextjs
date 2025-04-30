@@ -100,3 +100,11 @@ With App Router, routing is folder-based under app/. Layouts and templates give 
 ```
 
 > You can protect /dashboard pages via middleware or server components using session checks.
+
+## Set up default port
+
+Update `package.json` to use this to run dev
+
+```ts
+next dev -p 3002
+```
