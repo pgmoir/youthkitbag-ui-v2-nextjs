@@ -1,7 +1,10 @@
 import {
   HeroSectionGroups,
   HeroSectionOrganise,
+  HeroSectionSignup,
   HeroSectionTitle,
+  HeroSectionTrade,
+  HeroSectionTrust,
 } from '../components/loggedouthome/HeroSections';
 
 export default function LoggedOutHome() {
@@ -10,6 +13,9 @@ export default function LoggedOutHome() {
       <HeroSectionTitle />
       <HeroSectionOrganise />
       <HeroSectionGroups />
+      <HeroSectionTrust />
+      <HeroSectionTrade />
+      <HeroSectionSignup />
     </div>
   );
 }
