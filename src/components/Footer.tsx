@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { JSX } from 'react';
 
 function Footer(): JSX.Element {
@@ -23,21 +24,39 @@ function Footer(): JSX.Element {
       </aside>
       <nav>
         <h6 className="footer-title">About YouthKitbag</h6>
-        <a className="link link-hover">Buy a Bundle</a>
-        <a className="link link-hover">Help</a>
-        <a className="link link-hover">Media</a>
+        <Link href="/prices" className="link link-hover">
+          Buy a Bundle
+        </Link>
+        <Link href="/help" className="link link-hover">
+          Help
+        </Link>
+        <Link href="/media" className="link link-hover">
+          Media
+        </Link>
       </nav>
       <nav>
         <h6 className="footer-title">Information for</h6>
-        <a className="link link-hover">Terms & Conditions</a>
-        <a className="link link-hover">Privacy Policy</a>
-        <a className="link link-hover">Cookies</a>
-        <a className="link link-hover">Security</a>
-        <a className="link link-hover">Accessibility</a>
+        <Link href="/terms-conditions" className="link link-hover">
+          Terms & Conditions
+        </Link>
+        <Link href="/privacy-policy" className="link link-hover">
+          Privacy Policy
+        </Link>
+        <Link href="/cookies" className="link link-hover">
+          Cookies
+        </Link>
+        <Link href="/security" className="link link-hover">
+          Security
+        </Link>
+        <Link href="/accessibility" className="link link-hover">
+          Accessibility
+        </Link>
       </nav>
       <nav>
         <h6 className="footer-title">Contact details</h6>
-        <a className="link link-hover">pgmoir@gmail.com</a>
+        <Link href="mailto:pgmoir@gmail.com" className="link link-hover">
+          pgmoir@gmail.com
+        </Link>
       </nav>
     </footer>
   );
