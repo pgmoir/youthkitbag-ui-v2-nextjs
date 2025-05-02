@@ -3,7 +3,7 @@ import { JSX } from 'react';
 
 function Navbar(): JSX.Element {
   return (
-    <nav className="navbar bg-neutral text-neutral-content">
+    <nav className="navbar sticky top-0 z-50 bg-neutral text-neutral-content">
       <div className="navbar-start">
         <Link href="/" className="btn btn-ghost text-xl">
           YouthKitbag
