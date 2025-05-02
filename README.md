@@ -68,8 +68,8 @@ With App Router, routing is folder-based under app/. Layouts and templates give 
 /app/
 │
 ├── page.tsx               # Marketing landing page ("/")
-├── signin/
-│   └── page.tsx           # Sign-in ("/signin")
+├── login/
+│   └── page.tsx           # Sign-in ("/login")
 ├── signup/
 │   └── page.tsx           # Sign-up ("/signup")
 ├── help/
