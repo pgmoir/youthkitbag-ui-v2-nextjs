@@ -1,9 +1,9 @@
-import HeroSection from '../components/HeroSection';
+import { HeroSectionOrganise } from './HeroSections';
 
-export default function LoggedOutLanding() {
+export default function LoggedOutHome() {
   return (
-    <div className="flex flex-col items-center text-center">
-      <HeroSection />
+    <div>
+      <HeroSectionOrganise />
     </div>
   );
 }

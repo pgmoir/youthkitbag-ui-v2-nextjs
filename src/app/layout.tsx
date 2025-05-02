@@ -9,13 +9,6 @@ export const metadata: Metadata = {
   description: 'Your ultimate toolkit for youth activities.',
 };
 
-// const roboto = Roboto({
-//   subsets: ['latin'],
-//   weight: ['400', '500', '700'],
-// });
-
-// className={roboto.className}
-
 export default function RootLayout({
   children,
 }: Readonly<{
