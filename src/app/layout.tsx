@@ -1,7 +1,6 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -10,10 +9,12 @@ export const metadata: Metadata = {
   description: 'Your ultimate toolkit for youth activities.',
 };
 
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-});
+// const roboto = Roboto({
+//   subsets: ['latin'],
+//   weight: ['400', '500', '700'],
+// });
+
+// className={roboto.className}
 
 export default function RootLayout({
   children,
@@ -21,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en" data-theme="nord">
       <body>
         <Navbar />
         <main>{children}</main>
