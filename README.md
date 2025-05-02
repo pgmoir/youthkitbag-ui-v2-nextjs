@@ -1,6 +1,6 @@
 # youthkitbag-ui-v2-nextjs
 
-Building the youthkitbag front end from scratch again using modern technologies. This phase will use the existing rest api and database, but may interact with some elements direct. This version is going to be built using NextJS.
+I am running three consecutive projects to rebuild my youthkitbag front end from scratch again latest tech techstacks, React, NextJS and Nuxt (Vue based). I want to compare the patterns recommended for building with these tools, and compare how they perform, and how easy it is to build, test and deploy. I want to deploy to free services, and connect to the existing API. I also want the general look and feel to remain consistent with the original, but I want style to be simplified. I have opted to go with tailwindcss (as this seems to be the recommended approach that they all use), and daisyui (for free tailwindcss based components that can be used by all three projects). I don't want to get bogged down with style, but I want a nice clean fresh feel that doesn't get in the way of the structure. I will be building the three projects in parallel, feature by feature, step by step. I've also chosen npm as a consistent approach.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
@@ -35,15 +35,9 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3002](http://localhost:3002) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
@@ -108,3 +102,7 @@ Update `package.json` to use this to run dev
 ```ts
 next dev -p 3002
 ```
+
+## Implement DaisyUI (with TailwindCSS)
+
+I wanted to keep the actual html structure very consistent across the projects, so to facilitate component development I chose DaisyUI which seems to be the only free component library based on tailwindcss that can be used across the board.
