@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const HeroSectionTitle = () => {
   return (
     <section id="title" className="hero min-h-180">
@@ -201,7 +203,9 @@ export const HeroSectionSignup = () => {
               </button>
               <div className="text-center">
                 <span>If you already have a kitbag, </span>
-                <a className="link link-hover">then sign in for access</a>
+                <Link href="/signin" className="link link-hover">
+                  then sign in for access
+                </Link>
               </div>
             </fieldset>
           </div>
