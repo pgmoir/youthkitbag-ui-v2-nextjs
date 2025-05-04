@@ -11,8 +11,6 @@ function Login(): JSX.Element {
   useEffect(() => {
     if (state?.errorMessage) {
       toast.error(state?.errorMessage);
-    } else if (state?.message) {
-      toast.success(state?.message);
     }
   }, [state]);
 

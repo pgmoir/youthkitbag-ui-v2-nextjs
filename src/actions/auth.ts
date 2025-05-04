@@ -1,6 +1,7 @@
 'use server';
 
 import { FormState, LoginFormSchema } from '@/lib/definitions';
+import { redirect } from 'next/navigation';
 
 export async function login(state: FormState, formData: FormData) {
   const email = formData.get('email')?.toString() || '';
@@ -51,8 +52,6 @@ export async function login(state: FormState, formData: FormData) {
 
   await response.json();
 
-  return {
-    message: 'Login successful!',
-    data: originalState,
-  };
+  // ✅ On success, redirect to dashboard
+  redirect('/dashboard');
 }
