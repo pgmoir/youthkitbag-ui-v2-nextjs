@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import Providers from '@/components/Providers';
 import type { Metadata } from 'next';
 import './globals.css';
 
@@ -17,9 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="nord">
       <body>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <Providers>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
